@@ -3,6 +3,7 @@
 // Currently under development and not implemented currently.
 package octgo
 
+// OctGo - Core oct-tree structure for OctGo
 type OctGo struct {
 	*node
 
@@ -12,9 +13,9 @@ type OctGo struct {
 type nodes []*nodes
 
 type node struct {
-	parent *node
-	bound Bound
+	parent   *node
+	bound    Bound
 	entities Entities
 	children nodes
-	depth uint16
+	depth    uint16
 }
